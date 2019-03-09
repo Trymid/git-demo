@@ -12,3 +12,8 @@ Local branch
 
 Remote repository
 	git revert <sha1>
+
+
+git reset --(soft,mixed or hard) HEAD~over9999+  (перекидывает на
+необходимое количество коммитов назад, закидывая в стаге (софт),
+без стаге и по умолчанию (микс) и удаляет вообще коммит на харде)
