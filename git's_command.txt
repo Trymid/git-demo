@@ -1,0 +1,14 @@
+Working directory
+	git checkout --file.txt
+	git ckeckout .
+	git clean -xcf
+
+Staging area (index)
+	git reset --file.txt
+
+Local branch
+	git reset HEAD^^
+	git commit --amend -m "commit message"
+
+Remote repository
+	git revert <sha1>
