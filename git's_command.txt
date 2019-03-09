@@ -17,3 +17,25 @@ Remote repository
 git reset --(soft,mixed or hard) HEAD~over9999+  (перекидывает на
 необходимое количество коммитов назад, закидыва€ в стаге (софт),
 без стаге и по умолчанию (микс) и удал€ет вообще коммит на харде)
+
+# no .log files
+*.log
+
+# but do track error.log, even though you're
+ignoring .log files above
+!error.log
+
+# only ignore the TODO file in the current directory,
+not subdir/TODO
+/TODO
+
+# ignore all file in build/ directory
+build/
+
+# ignore doc/notes.txt, but no doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory
+doc/**/*.pdf
+
+главное регул€рность в повторении и упражнении
